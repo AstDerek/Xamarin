@@ -7,7 +7,13 @@ namespace Actividad8
 	{
 		public Contenido ()
 		{
-
+			this.Content = new Label {
+				Text = "Bienvenido al contenido",
+				TextColor = Color.Green,
+				BackgroundColor = Color.White,
+				HorizontalOptions = LayoutOptions.ExpandAndCenter,
+				VerticalOptions = LayoutOptions.ExpandAndCenter
+			}
 		}
 	}
 }
