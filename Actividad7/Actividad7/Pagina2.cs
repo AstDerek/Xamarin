@@ -13,7 +13,7 @@ namespace Actividad7
 			};
 			
 			Button boton = new Button {
-				Text = "Click para navegar a la página2"
+				Text = "Click para navegar a la página 3"
 			};
 			
 			boton.Clicked += (sender, e) => {
