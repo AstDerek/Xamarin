@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xamarin.Forms;
 
 namespace Actividad9
@@ -17,9 +17,11 @@ namespace Actividad9
 			};
 
 			boton.Clicked += (sender, e) => {
-
-				if(usuario.Text.Equals("usuario")){
+				if(usuario.Text.Equals("usuario") && clave.Text.Equals("clave")){
 					Navigation.PushAsync(new Contenido());
+				} else {
+					usuario.TextColor = Color.Red;
+					clave.TextColor = Color.Red;
 				}
 			};
 
@@ -35,7 +37,7 @@ namespace Actividad9
 					clave,
 					boton
 				}
-				};
+			};
 
 			//Como esta clase hereda de ContentPage, podemos usar estas propiedades directamente
 			this.Content = stackLayout;
