@@ -17,7 +17,25 @@ namespace Actividad8
 			};
 
 			boton.Clicked += (sender, e) => {
+				if (!usuario.Text.Length || !clave.Text.Length ||
+					!usuario.Text.Equals("Goku") || !clave.Equals("Kakaroto")) {
+					usuario.TextColor = Color.Red;
+					clave.TextColor = Color.Red;
+				} else {
+					usuario.TextColor = Color.Green;
+					clave.TextColor = Color.Green;
+					Navigation.PushAsync(new Contenido());
+				}
+			};
 
+			usuario.TextChanged += (sender, args) => {
+				usuario.TextColor = Color.Black;
+				clave.TextColor = Color.Black;
+			};
+
+			clave.TextChanged += (sender, args) => {
+				usuario.TextColor = Color.Black;
+				clave.TextColor = Color.Black;
 			};
 
 			//Stacklayout permite apilar los controles verticalmente
