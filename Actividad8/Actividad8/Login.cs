@@ -24,7 +24,7 @@ namespace Actividad8
 				} else {
 					usuario.TextColor = Color.Green;
 					clave.TextColor = Color.Green;
-					this.Navigation.PushAsync(new Contenido());
+					Navigation.PushAsync(new Contenido());
 				}
 			};
 
