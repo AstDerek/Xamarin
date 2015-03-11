@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Xamarin.Forms;
 
 namespace Actividad9
@@ -7,7 +7,13 @@ namespace Actividad9
 	{
 		public Contenido ()
 		{
-
+			this.Content = new Label {
+				Text = "Bienvenido al contenido",
+				TextColor = Color.Green,
+				BackgroundColor = Color.White,
+				HorizontalOptions = LayoutOptions.ExpandAndCenter,
+				VerticalOptions = LayoutOptions.ExpandAndCenter
+			}
 		}
 	}
 }
